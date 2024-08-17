@@ -1,0 +1,94 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  
+  @media (min-width: 768px) {
+    .user-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .user-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .user-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  
+  .user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: red;
+  }
+  
+  .user-info {
+    margin-bottom: 16px;
+    color: black;
+  }
+  
+  .user-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .edit-button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 8px 36px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+  }
+  
+  .edit-button:hover {
+    background-color: gold;
+    transform: scale(1.05);
+  }
+  
+  .no-users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+  }
+  
+  .no-users p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: black;
+  }
+  
